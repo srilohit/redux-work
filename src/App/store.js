@@ -4,7 +4,7 @@ import todolistReducer from "../features/todolist/todolistSlice";
 import productReducer from "../features/products/productsSlice";
 
 export const store = configureStore({
-    reducer:{
+    reducer:{ 
         counter: counterReducer,
         todolist: todolistReducer,
         products: productReducer

@@ -11,12 +11,12 @@ var Products =()=>{
     },[])
 
     return (
-        <div className="border border-2 border-success m-2 p-2">
-            <h1 className="text-success">D-Mart</h1>
+        <div className="border border-2 border-success m-2 p-2 bg-black">
+            <img src="https://img.etimg.com/thumb/msid-77515791,width-1070,height-580/photo.jpg" width={'150px'} height={'60px'} alt="" />
             <b>
                 {
                     products && products.map((p)=>{
-                        return <li>{p.title}</li>
+                        return <li className="text-success border border-1 border-success m-2 p-2">{p.title}</li>
                     })
                 }
             </b>
