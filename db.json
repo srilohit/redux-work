@@ -1,0 +1,157 @@
+{
+  "carTypes": [
+    {
+      "id": 1,
+      "type": "Hatchback"
+    },
+    {
+      "id": 2,
+      "type": "Sedan"
+    },
+    {
+      "id": 3,
+      "type": "CrossOver"
+    },
+    {
+      "id": 4,
+      "type": "XUV"
+    },
+    {
+      "id": 5,
+      "type": "Tiago"
+    },
+    {
+      "id": 6,
+      "type": "shift"
+    },
+    {
+      "id": 7,
+      "type": "nexus"
+    },
+    {
+      "id": 8,
+      "type": "Benz"
+    }
+  ],
+  "serviceTypes": [
+    {
+      "id": 1,
+      "type": "Puncture"
+    },
+    {
+      "id": 2,
+      "type": "wash"
+    },
+    {
+      "id": 3,
+      "type": "oiling"
+    },
+    {
+      "id": 4,
+      "type": "change head light"
+    },
+    {
+      "id": 5,
+      "type": "lock sensor"
+    },
+    {
+      "id": 6,
+      "type": "break fail"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "serviceType": "Puncture",
+      "serviceTitle": "TubelessPuncture",
+      "serviceCost": {
+        "Hatchback": 30,
+        "Sedan": 50,
+        "CrossOver": 100,
+        "XUV": 150,
+        "Tiago": 200
+      }
+    },
+    {
+      "id": 2,
+      "serviceType": "Puncture",
+      "serviceTitle": "WithTubePuncture",
+      "serviceCost": {
+        "Hatchback": 40,
+        "Sedan": 70,
+        "CrossOver": 120,
+        "XUV": 200,
+        "Tiago": 250
+      }
+    },
+    {
+      "id": 3,
+      "serviceType": "break fail",
+      "serviceTitle": "front & back",
+      "serviceCost": {
+        "Hatchback": "43",
+        "Sedan": "543",
+        "CrossOver": "432",
+        "Tiago": "43",
+        "XUV": "432",
+        "shift": "432",
+        "nexus": "234"
+      }
+    }
+  ],
+  "signup": [
+    {
+      "id": 1,
+      "username": "bunny",
+      "fullname": "medisetti sri lohit",
+      "mobile": "9381248611",
+      "email": "medisettisrilohit@gmail.com",
+      "password": "Bunny@0711",
+      "rePassword": "Bunny@0711"
+    },
+    {
+      "id": 2,
+      "username": "pooji",
+      "fullname": "thebede poojitha",
+      "mobile": "9381248611",
+      "email": "poojithathebede@gmail.com",
+      "password": "pooji@16",
+      "rePassword": "pooji@16"
+    },
+    {
+      "username": "prudhvimedisetti@gmail.com",
+      "fullname": "medisetti prudhvi",
+      "mobile": "8185975226",
+      "email": "prudhvimedisetti@gmail.com",
+      "password": "Prudhvi@27",
+      "rePassword": "Prudhvi@27",
+      "id": 3
+    },
+    {
+      "username": "applegautam",
+      "fullname": "pilla gautam",
+      "mobile": "1234567890",
+      "email": "applegautam@gmail.com",
+      "password": "Applegautam@123",
+      "rePassword": "Applegautam@123",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
