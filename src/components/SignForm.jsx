@@ -6,31 +6,7 @@ import * as Yup from 'yup';
 
 const SignForm =()=>{
 
-    // const [newUser,setNewUser] = useState({
-    //     'id': '',
-    //     'username':'',
-    //     'fullname':'',
-    //     'mobile':'',
-    //     'email':'',
-    //     'password':'',
-    //     'rePassword':''
-    // });
-
-    // const addUser =()=>{
-    //     console.log(newUser);
-    //     axios({
-    //         method: 'post',
-    //         url: 'http://localhost:4000/signup',
-    //         data: 
-    //         newUser
-    //     }).then(()=>{
-    //         alert('added successfully')
-    //     });
-    // };
-
     const [newUser,setNewUser] = useState({});
-
-    
 
     useEffect(()=>{
         axios({
@@ -40,7 +16,7 @@ const SignForm =()=>{
         }).then(()=>{
             alert('added successfully')
         });
-    },[newUser])
+    },[newUser]);
 
     return(
         <div className="sign-text">
@@ -66,8 +42,7 @@ const SignForm =()=>{
                     })}
 
                     onSubmit={(values)=>{
-                        setNewUser({...newUser,...values});
-                        //console.log(values);
+                        setNewUser({...values});
                     }}
                 >
 
@@ -109,25 +84,6 @@ const SignForm =()=>{
                     }
                 </Formik>
             </div>
-                {/* <form className="form-control" onSubmit={(e)=>{e.preventDefault()}} style={{backgroundColor: 'rgb(233,234,236)'}}>
-                    <h2 className="border-bottom text-center">Sign-Up</h2>
-                    <label htmlFor="" className="form-lable mt-1">Username</label>
-                    <input type="text" className="form-control p-1" placeholder="mail or mobile" onChange={(e)=>{setNewUser({...newUser,username:e.target.value})}}/>
-                    <label htmlFor="" className="form-lable mt-1">Full Name</label>
-                    <input type="text" className="form-control p-1" onChange={(e)=>{setNewUser({...newUser,fullname:e.target.value})}}/>
-                    <label htmlFor="" className="form-lable mt-1">Mobile</label>
-                    <input type="number" className="form-control p-1" onChange={(e)=>{setNewUser({...newUser,mobile:e.target.value})}}/>
-                    <label htmlFor="" className="form-lable mt-1">Email ID</label>
-                    <input type="mail" className="form-control p-1" onChange={(e)=>{setNewUser({...newUser,email:e.target.value})}}/>
-                    <label htmlFor="" className="form-lable mt-1">Password</label>
-                    <input type="password" className="form-control p-1" onChange={(e)=>{setNewUser({...newUser,password:e.target.value})}}/>
-                    <label htmlFor="" className="form-lable mt-1">Re-type Password</label>
-                    <input type="password" className="form-control p-1" onChange={(e)=>{setNewUser({...newUser,rePassword:e.target.value})}}/>
-                    <div style={{textAlign:'center'}}>
-                        <button onClick={addUser} className="btn btn-dark w-25 mx-1 mt-3">Submit</button>
-                    </div>
-                </form>  */}
-            
         </div>
     </div>
     )
